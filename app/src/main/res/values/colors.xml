@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="Merah">#FF0000</color>
+    <color name="colorGray">#BBC2C5</color>
+    <color name="colorGold">#ffd700</color>
+    <color name="colorDarkGold">#D1B000</color>
+    <color name="colorYellow">#FFDF00</color>
+    <color name="colorSilver">#BFC2C5</color>
+    <color name="colorKuning">#FFDF00</color>
+    <color name="BiruDJP">#202C44</color>
+    <color name="AbuTulisan">#959CA7</color>
+    <color name="KuningDJP">#FFBC00</color>
+    <color name="BiruDJP_BG">#042C75</color>
+    <color name="Hitam">#000000</color>
+
+</resources>

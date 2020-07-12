@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilWP">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp">
+
+        <TextView
+            android:id="@+id/textNamaWP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/atas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/box"
+        app:layout_constraintStart_toStartOf="@id/atas"
+        tools:layout_editor_absoluteY="150dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="NPWP"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Alamat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="31dp"
+            android:text="KLU"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="AR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/textNPWP"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:met_mask="##.###.###.#-###.###" />
+
+        <TextView
+            android:id="@+id/textAlamatWP"
+            android:layout_width="290dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:lines="3"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNPWP" />
+
+        <TextView
+            android:id="@+id/textKLU"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textNPWP"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:lines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAlamatWP" />
+
+        <TextView
+            android:id="@+id/textNamaAR"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            app:fontFamily="@font/din_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textKLU" />
+
+        <TextView
+            android:id="@+id/txtTunggakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginBottom="16dp"
+            android:text="Tunggakan"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textNamaAR"
+            app:layout_constraintVertical_bias="0.19" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

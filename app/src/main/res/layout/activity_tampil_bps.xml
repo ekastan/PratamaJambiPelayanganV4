@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDF00"
+    tools:context=".TampilBPS">
+
+    <EditText
+        android:id="@+id/txtNoBPS"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="Nomor BPS"
+        android:inputType="number"
+        android:textColor="#202C44"
+        android:textSize="26sp"
+        app:fontFamily="@font/din_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtNamaLayanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="80dp"
+        android:text="Status BPS"
+        android:textColor="#202C44"
+        android:textSize="36sp"
+        app:fontFamily="@font/din_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExit" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Nomor BPS"
+        android:textColor="#202C44"
+        android:textSize="20sp"
+        app:fontFamily="@font/din_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNamaLayanan" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/arrow"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Lacak BPS"
+        android:textColor="#202C44"
+        android:textSize="30sp"
+        app:fontFamily="@font/din_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:background="@color/BiruDJP_BG"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:fontFamily="@font/din_medium"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoBPS" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

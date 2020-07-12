@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Klik"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IconFormulir"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/nonefektif" />
+
+            <TextView
+                android:id="@+id/textview_NamaLayanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Nama Layanan"
+                android:textColor="@color/Hitam"
+                android:textSize="18sp"
+                app:fontFamily="@font/din_medium" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textview_IdLayanan"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:textSize="12sp"
+                app:fontFamily="@font/din_medium"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:text="Id Layanan" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textHariKerja"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:textSize="12sp"
+                app:fontFamily="@font/din_medium"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:text="Id Layanan" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textURLFormulir"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:textSize="12sp"
+                app:fontFamily="@font/din_medium"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:text="URL Formulir" />
+
+            <TextView
+                android:id="@+id/textURLIconFormulir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="URL Formulir"
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:fontFamily="@font/din_medium"
+                app:layout_constraintStart_toEndOf="@+id/IconFormulir"
+                app:layout_constraintTop_toBottomOf="@+id/textview_NamaLayanan" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="40dp"
+            android:text="Selamat Datang!"
+            android:textSize="30sp"
+            android:textColor="#202C44"
+            android:fontFamily="@font/din_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_bawah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/din_medium"
+            android:text="Wajib Pajak KPP Pratama Jambi Pelayangan"
+            android:textSize="12sp"
+            android:textColor="#BFC2C5"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:padding="0dp"
+            android:src="@drawable/perempuan" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/din_medium"
+            android:text="Jadi cerdas dengan menggunakan aplikasi KPP Pratama Jambi Pelayangan yang mengintegrasikan berbagai layanan perpajakan"
+            android:textSize="13sp"
+            android:textColor="#BFC2C5"
+            android:gravity="start" />
+
+    </LinearLayout>
+</RelativeLayout>
