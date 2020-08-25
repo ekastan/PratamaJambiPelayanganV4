@@ -14,8 +14,10 @@ public class PersyaratanModel {
     private String Url;
     private String Penjelasan;
     private String URLFormulir;
+    private String IconFormulir;
+    private String Foto;
 
-    public PersyaratanModel(String IdLayanan, String NamaLayanan, String Keterangan, String Dokumen, String HariKerja, String Url, String Penjelasan, String URLFormulir) {
+    public PersyaratanModel(String IdLayanan, String NamaLayanan, String Keterangan, String Dokumen, String HariKerja, String Url, String Penjelasan, String URLFormulir, String IconFormulir, String Foto) {
         this.IdLayanan = IdLayanan;
         this.NamaLayanan = NamaLayanan;
         this.Keterangan = Keterangan;
@@ -24,6 +26,8 @@ public class PersyaratanModel {
         this.Url = Url;
         this.Penjelasan = Penjelasan;
         this.URLFormulir = URLFormulir;
+        this.IconFormulir = IconFormulir;
+        this.Foto = Foto;
     }
 
     public PersyaratanModel() {
@@ -95,6 +99,16 @@ public class PersyaratanModel {
         this.Penjelasan = penjelasan;
     }
 
+    public String getFoto() {
+
+        return Foto;
+    }
+
+    public void setFoto(String foto) {
+
+        this.Foto = foto;
+    }
+
     public String getURLFormulir() {
 
         return URLFormulir;
@@ -107,12 +121,12 @@ public class PersyaratanModel {
 
     public String getIconFormulir() {
 
-        return URLFormulir;
+        return IconFormulir;
     }
 
-    public void setIconFormulir(String url_formulir) {
+    public void setIconFormulir(String icon_formulir) {
 
-        this.URLFormulir = url_formulir;
+        this.IconFormulir = icon_formulir;
     }
 
 }

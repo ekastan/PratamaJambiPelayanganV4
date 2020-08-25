@@ -2,4 +2,6 @@
     <string name="app_name">PratamaJambiPelayangan</string>
     <string name="title_activity_maps2">Map</string>
     <string name="google_maps_key">AIzaSyDQOAGYOd26DAnTFBBXf7AuBeYHv9STb20</string>
+    <string name="extended_fab_label">Login</string>
+    <string name="extended_fab_content_desc">Login</string>
 </resources>

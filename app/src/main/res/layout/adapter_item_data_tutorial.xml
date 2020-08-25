@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/Klik"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CardLayanan"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="-2dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/box"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/arrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/textview_NamaLayanan"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/din_medium"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Layanan"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/textview_IdLayanan"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/din_medium"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="Id Layanan"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/textURL"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/din_medium"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="URL"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/textPenjelasan"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/din_medium"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="URL"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

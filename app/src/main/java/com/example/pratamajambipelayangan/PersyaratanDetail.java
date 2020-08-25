@@ -129,10 +129,10 @@ public class PersyaratanDetail extends AppCompatActivity {
             //looping utk array
             for(int i=0; i<jsonArray.length(); i++){
                 //get json berdasarkan banyaknya data (index i)
-                JSONObject objectMakanan = jsonArray.getJSONObject(i);
+                JSONObject objectPersyaratan = jsonArray.getJSONObject(i);
 
                 //get data berdasarkan attribte yang ada dijsonnya (harus sama)
-                String Dokumen = objectMakanan.getString("dokumen");
+                String Dokumen = objectPersyaratan.getString("dokumen");
 
                 //add data ke modelnya
                 PersyaratanModel persyaratanModel = new PersyaratanModel();
