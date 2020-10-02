@@ -62,7 +62,7 @@
             <RelativeLayout
                 android:id="@+id/Main_1"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="90dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
@@ -78,63 +78,824 @@
                     android:background="@drawable/rounded_4corners_putih">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/txtbuat"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
                         android:fontFamily="@font/din_regular"
-                        android:text="Edukasi Pajak"
+                        android:text="Buat NPWP"
                         android:textColor="@color/BiruDJP"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="175dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="30dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_below="@+id/txtbuat"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
                         android:fontFamily="@font/din_regular"
-                        android:text="1. Kemana 1 Juta Uang Pajak Kita\n2. Istilah Umum Perpajakan\n3. Sistem Perpajakan di Indonesia\ndan lainnya"
+                        android:text="via eReg website pajak.go.id"
                         android:textColor="@color/Hitam"
                         android:textSize="14sp" />
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
                         android:layout_marginEnd="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="25dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
                         android:background="@drawable/panah_hitam_kanan" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="180dp"
-                    android:layout_height="120dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginLeft="0dp"
-                        android:src="@drawable/main_1" />
+                        android:id="@+id/imageView8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_1" />
 
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtbuat"
+                        android:layout_toRightOf="@+id/txtbuat"
+                        app:srcCompat="@drawable/layanan_ereg" />
                 </RelativeLayout>
-
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/Main_2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtAntri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Pesan Antrian Online"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtAntri"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Efektifkan waktu Anda dengan Antrian Online"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_2" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtPesan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Bayar Pajak"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPesan"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Buat kode billing via ebilling atau WA PA-bos"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtPesan"
+                        android:layout_toRightOf="@+id/txtPesan"
+                        app:srcCompat="@drawable/layanan_ebilling" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/imageView12"
+                        android:layout_toRightOf="@+id/imageView12"
+                        app:srcCompat="@drawable/layanan_wapabos" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtLapor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Lapor Pajak"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtLapor"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="via eReg website pajak.go.id"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtLapor"
+                        android:layout_toRightOf="@+id/txtLapor"
+                        app:srcCompat="@drawable/layanan_efilling" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/imageView15"
+                        android:layout_toRightOf="@+id/imageView15"
+                        app:srcCompat="@drawable/layanan_eform" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtValidasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Validasi PHTB"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtValidasi"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Validasi via e-PHTB"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_5" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtValidasi"
+                        android:layout_toRightOf="@+id/txtValidasi"
+                        app:srcCompat="@drawable/layanan_phtb" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtCariAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Cari Account Representative-mu"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtCariAR"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Berkonsultasilah dengan AR-mu"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_6" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_7"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtLacak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Lacak Bukti Penerimaan Surat"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtLacak"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Cari tahu status BPS mu"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_7" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_8"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtTunggakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Periksa Tunggakan Pajak"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTunggakan"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Hindari sanksi administrasi dari tunggakan"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_8" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Main_9"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtWebsite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Website Pajak"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtWebsite"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Akses fitur e-services lengkap di website pajak"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_9" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtWebsite"
+                        android:layout_toRightOf="@+id/txtWebsite"
+                        app:srcCompat="@drawable/layanan_group" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanya Status Permohonan"
+                android:textColor="@color/BiruDJP"
+                android:fontFamily="@font/din_medium"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/Main_10"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_4corners_putih">
+
+                    <TextView
+                        android:id="@+id/txtPermohonan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Tanya Status Permohonan"
+                        android:textColor="@color/BiruDJP"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPermohonan"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/din_regular"
+                        android:text="Sudah selesai atau belum permohonan"
+                        android:textColor="@color/Hitam"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="38dp"
+                        android:background="@drawable/panah_hitam_kanan" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/layanan_10" />
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/txtPermohonan"
+                        android:layout_toRightOf="@+id/txtPermohonan"
+                        app:srcCompat="@drawable/layanan_wa" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

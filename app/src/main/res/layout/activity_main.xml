@@ -83,7 +83,7 @@
                 android:textSize="14sp" />
 
             <RelativeLayout
-                android:id="@+id/Main_1"
+                android:id="@+id/btnMain_1"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:layout_marginTop="15dp"
@@ -165,7 +165,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="goToLayananOnline">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -241,7 +242,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="goToPersyratan">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -317,7 +319,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="goToTutorial">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -393,7 +396,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="goToFeedback">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -470,7 +474,8 @@
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="60dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:onClick="goToMaps">
 
                 <RelativeLayout
                     android:layout_width="match_parent"

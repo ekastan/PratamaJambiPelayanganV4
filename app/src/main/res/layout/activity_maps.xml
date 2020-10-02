@@ -91,7 +91,7 @@
         <TextView
             android:id="@+id/txtHubungi"
             android:layout_width="wrap_content"
-            android:layout_height="18dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/map"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/din_medium"
